@@ -1,59 +1,41 @@
-# VantageIntranet
+VANTAGE GLOBAL // INTRANET
+Enterprise intranet • Angular 22 • Zoneless • Signals • SSR • 70kB transfer
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.2.0.
+🌐 Live Demo: https://vantage-intranet.vercel.app/
 
-## Development server
+[Deployed on Vercel](https://vantage-intranet.vercel.app/)
+[Angular 22](https://angular.dev)
+[Bundle 70kB](#performance---production-build)
 
-To start a local development server, run:
+Why this exists
+Diluted a 1500-line monolithic app.component.html into a modern, scalable architecture. From legacy to Angular 22 best practices in one migration. Deployed as dark-only for LATAM operations center.
 
-```bash
-ng serve
-```
+Live
+https://vantage-intranet.vercel.app/
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+SSR Operational + Prerendered 3 static routes
+Dark mode locked (zinc-950 shell)
+Live Activity • 247 online with pulse
+Performance - Production Build
+Browser bundles
+Initial chunk files  | Names            |  Raw size | Estimated transfer size
+main-PMTGPRT5.js     | main             | 245.90 kB |                66.68 kB
+styles-JE75TJ3S.css  | styles           |  22.27 kB |                 3.43 kB
+                     | Initial total    | 268.17 kB |                70.11 kB
 
-## Code scaffolding
+Lazy chunk files     | Names            |  Raw size | Estimated transfer size
+knowledge-base   | 103 bytes  | 103 bytes
+home-component   | 2.02 kB    | 980 bytes
+people-component | 3.23 kB    | 1.30 kB
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Prerendered 3 static routes.
+Stack
+Angular 22 standalone, zoneless
+Signals: signal(), computed(), effect(), resource()
+SSR + Tailwind darkMode class
+Pure signals - No NgRx
+Deploy
+Vercel: ng build / Output: dist/vantage-intranet/browser
+Live: https://vantage-intranet.vercel.app/
 
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Built by Jairo Andrade • Nilópolis, RJ
